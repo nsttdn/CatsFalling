@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="50dp" /> <!-- Задайте радіус для закруглених країв -->
+    <solid android:color="#80FFFF00" /> <!-- Колір кнопки (з напівпрозорістю) -->
+</shape>
