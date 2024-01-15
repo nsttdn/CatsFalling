@@ -122,7 +122,6 @@ public class Cats {
                 selectedCatBitmap = neko5Bitmap;
                 break;
             default:
-                // Handle unexpected index, or provide a default cat image
                 selectedCatBitmap = neko1Bitmap;
                 break;
         }
@@ -147,8 +146,7 @@ public class Cats {
                 catPosition.y <= bed.getY() &&
                 catPosition.x >= bed.getX() &&
                 catPosition.x <= (bed.getX() + bed.getBedBitmap().getWidth())) {
-            // Cat touched the bed, increase the score
-            reset(); // Reset the cat's position
+            reset();
             return true;
         }
         return false;

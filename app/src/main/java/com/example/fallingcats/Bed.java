@@ -9,15 +9,14 @@ import android.graphics.Point;
 
 public class Bed {
     private Bitmap bedBitmap;
-    private float x;  // x-coordinate of the bed's top-left corner
-    private float y;  // y-coordinate of the bed's top-left corner
-    private float bedSpeed = 15;  // Adjust the speed as needed
+    private float x;
+    private float y;
+    private float bedSpeed = 15;
 
     Bed(Context context, int NUM_BLOCK_HIGH, int NUM_BLOCK_WIDE, int BLOCK_SIZE, int screenHeight) {
         bedBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.bed);
         bedBitmap = Bitmap.createScaledBitmap(bedBitmap, 2 * BLOCK_SIZE, BLOCK_SIZE, true);
 
-        // Initial position of the bed (centered at the bottom of the screen)
         x = (NUM_BLOCK_WIDE * BLOCK_SIZE - bedBitmap.getWidth()) / 2;
         y = screenHeight + 8*BLOCK_SIZE;
 

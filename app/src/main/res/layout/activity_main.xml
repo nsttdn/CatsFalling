@@ -34,19 +34,20 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="75dp"
             android:background="@drawable/rounded_transparent_button"
             android:backgroundTint="#616060"
             android:fontFamily="@font/architects_daughter"
+            android:onClick="btnScore"
             android:text="Scores"
             android:textColor="#000000"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginStart="75dp"
-            android:layout_marginEnd="75dp"
-            android:layout_marginTop="40dp"/>
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/rateButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_transparent_button"
@@ -60,32 +61,33 @@
             android:layout_marginTop="40dp"/>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/shareButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="75dp"
             android:background="@drawable/rounded_transparent_button"
             android:fontFamily="@font/architects_daughter"
             android:insetRight="10dp"
             android:text="Share"
             android:textColor="#000000"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginStart="75dp"
-            android:layout_marginEnd="75dp"
-            android:layout_marginTop="40dp"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="75dp"
             android:background="@drawable/rounded_transparent_button"
             android:fontFamily="@font/architects_daughter"
+            android:onClick="exitGame"
             android:text="Quit"
             android:textColor="#000000"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginStart="75dp"
-            android:layout_marginEnd="75dp"
-            android:layout_marginTop="40dp"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
