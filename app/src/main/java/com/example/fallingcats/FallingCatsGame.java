@@ -1,5 +1,6 @@
 package com.example.fallingcats;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,6 +14,8 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 
@@ -33,10 +36,13 @@ public class FallingCatsGame extends SurfaceView implements Runnable {
     private long lastUpdateTime;
     private int fallingSpeed = 320;
     GestureDetector gestureDetector;
-
     private boolean touchLeft;
     private boolean touchRight;
     private Context context;
+
+    private Button pauseButton;
+    private Button restartButton;
+    private Button resumeButton;
     FallingCatsGame(Context context, Point screenSize){
         super(context);
         this.context = context;
@@ -65,6 +71,18 @@ public class FallingCatsGame extends SurfaceView implements Runnable {
             }
             return true;
         });
+        pauseButton = (Button) ((Activity) context).findViewById(R.id.pauseButton);
+
+        // перевірка, чи кнопка успішно ініціалізована
+        if (pauseButton != null) {
+            // налаштування обробників подій для кнопки
+            pauseButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // ваш код для обробки кліку на кнопку
+                }
+            });
+        }
     }
 
     @Override
@@ -173,4 +191,22 @@ public class FallingCatsGame extends SurfaceView implements Runnable {
             throw new RuntimeException(e);
         }
     }
-}
+    private void showButtonsOnPause() {
+        restartButton.setVisibility(View.VISIBLE);
+        resumeButton.setVisibility(View.VISIBLE);
+        pauseButton.setVisibility(View.GONE);
+    }
+
+    private void hideButtonsOnResume() {
+        restartButton.setVisibility(View.GONE);
+        resumeButton.setVisibility(View.GONE);
+        pauseButton.setVisibility(View.VISIBLE);
+    }
+
+    private void restartGame() {
+        // Логіка для перезапуску гри
+        paused = false;
+        hideButtonsOnResume();
+        // Інші дії, які потрібно виконати при перезапуску гри
+    }
+} 

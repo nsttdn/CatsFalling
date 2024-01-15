@@ -9,6 +9,45 @@ import android.graphics.Point;
 
 import java.util.Random;
 
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Point;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import android.os.Handler;
+import android.os.Looper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import android.os.Handler;
+import android.os.Looper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import android.os.Handler;
+import android.os.Looper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Point;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+import android.os.Handler;
+
 public class Cats {
     private Point positionOfCats = new Point();
     private Bitmap neko1Bitmap;
@@ -119,3 +158,9 @@ public class Cats {
         return catPosition.y >= screenHeight;
     }
 }
+
+
+
+
+
+

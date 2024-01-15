@@ -6,4 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".PlayActivity">
 
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Paysed"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="193dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Restart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/resumeButton"
+        android:layout_width="197dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Continie"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
